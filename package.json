@@ -21,7 +21,6 @@
   },
   "scripts": {
     "dev": "webpack --watch"
-    
   },
   "repository": {
     "type": "git",

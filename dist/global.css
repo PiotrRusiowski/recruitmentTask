@@ -6,10 +6,14 @@
 * {
   box-sizing: border-box; }
 
-.container {
-  margin: 24px;
-  max-width: 1920px;
-  min-width: 320px; }
+p {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
 
 body {
   font-size: 16px;
@@ -24,8 +28,21 @@ nav {
   background-color: #191d1f;
   color: white; }
 
+.container {
+  margin: 24px;
+  max-width: 1920px;
+  min-width: 320px; }
+
 .ml-auto {
   margin-left: auto; }
+
+.mutte {
+  width: 41px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #99a9b1; }
 
 .row {
   display: flex; }
@@ -53,6 +70,9 @@ nav {
   border: solid 2px rgba(43, 143, 244, 0.2);
   border-radius: 5px; }
 
+.btn-card {
+  width: 100%; }
+
 .card {
   display: flex;
   border-radius: 5px;
@@ -66,19 +86,37 @@ nav {
   margin-bottom: 24px; }
 
 .card-header {
-  height: 64px;
-  padding: 20px 22px; }
+  padding: 24px; }
+
+.card-body {
+  border-top: 1px solid #ebedee;
+  border-bottom: 1px solid #ebedee;
+  padding: 20px 24px; }
+
+.card-footer {
+  padding: 24px; }
 
 .card-filters {
   margin-right: 24px;
   display: block;
-  text-align: left; }
+  text-align: left;
+  flex-basis: 60%; }
+  .card-filters ul {
+    margin-top: 20px; }
+  .card-filters li:first-child {
+    color: #7a8388; }
+  .card-filters .list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; }
+    .card-filters .list .checkbox {
+      width: 20px;
+      height: 20px;
+      margin-right: 16px; }
 
 .cards {
-  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
+  flex-direction: column; }
 
 
 /*# sourceMappingURL=global.css.map*/

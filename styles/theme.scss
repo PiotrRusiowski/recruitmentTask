@@ -11,10 +11,16 @@
     box-sizing: border-box;
 }
 
-.container {
-    margin:24px ;
-    max-width: 1920px;
-    min-width: 320px;
+p {
+    margin: 0;
+    padding: 0;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -32,9 +38,22 @@ nav {
     color: white;
 }
 
+.container {
+    margin: 24px;
+    max-width: 1920px;
+    min-width: 320px;
+}
+
 .ml-auto {
     margin-left: auto;
 }
 
 
-
+.mutte {
+    width: 41px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #99a9b1;
+}
