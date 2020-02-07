@@ -1,7 +1,7 @@
 @import '../vars';
 
 .btn {
-    width: 148px;
+
     height: 48px;
     font-size: 16px;
     font-stretch: normal;
@@ -18,7 +18,7 @@
 
 .btn-primary {
     border: $color-primary;
-
+    width: 148px;
     background-color: $color-primary;
     color: $font-btn;
 }
@@ -26,10 +26,22 @@
 .btn-light {
     border: solid 2px $color-primary;
     border-radius: 5px;
-
+    width: 148px;
 
 }
 
 .btn-card {
     width: 100%;
+}
+
+.tabele-btn {
+    color: $font-dark;
+    height: 100%;
+    border-radius: 5px 0 0 0;
+    border: none;
+    border-bottom: solid 2px $font-btn;
+    background-color: #fff;
+    font-weight: normal;
+
+
 }

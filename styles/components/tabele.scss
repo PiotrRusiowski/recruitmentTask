@@ -1,0 +1,52 @@
+@import '../vars';
+
+.table {
+    display: table;
+    text-align: center;
+    width: 100%;
+
+    border: solid 1px #ebedee;
+    border-radius: 4px;
+
+}
+
+.theader {
+    display: table-row;
+    width: 300px;
+}
+
+.table_header {
+    display: table-cell;
+    background: #ebedee;
+
+    padding: 20px 24px;
+    text-align: left;
+
+
+}
+
+.table_cell {
+    display: flex;
+    align-items: center;
+    color: $font-dark-mute;
+    font-size: 14px;
+
+    .circle {
+        width: 4px;
+        height: 4px;
+        margin: 8px;
+    }
+}
+
+.table_row {
+    display: table-row;
+
+
+}
+
+.table_small {
+    text-align: left;
+    display: table-cell;
+    border-bottom: solid 1px #ebedee;
+    padding: 16px 24px;
+}

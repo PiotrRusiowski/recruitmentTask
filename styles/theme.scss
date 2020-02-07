@@ -32,17 +32,68 @@ body {
 }
 
 nav {
-    width: 100%;
-    height: 80px;
     background-color: #191d1f;
-    color: white;
+    color: rgb(143, 143, 143);
+
+    .card-header {
+        border: none;
+
+    }
+
+}
+
+select {
+    width: 100%;
+    height: 48px;
+    -webkit-appearance: none;
+    border: 1px solid #ebedee;
+    border-radius: 5px;
+    line-height: 2;
+    background-color: #fff;
+    margin-bottom: 14px;
+    margin-top: 16px
 }
 
 .container {
     margin: 24px;
-    max-width: 1920px;
-    min-width: 320px;
+
 }
+
+////
+.menu {
+    display: none;
+    width: 200px;
+    height: 100%;
+    background-color: red;
+
+}
+
+
+
+/////
+
+.circle {
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    margin-right: 24px;
+}
+
+.rectangle {
+    width: 51px;
+    height: 51px;
+    border-radius: 4px;
+
+    margin: 15px 24px 0 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
 
 .ml-auto {
     margin-left: auto;
@@ -50,10 +101,10 @@ nav {
 
 
 .mutte {
-    width: 41px;
+
     font-size: 12px;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.5px;
-    color: #99a9b1;
+    color: $font-mute;
 }

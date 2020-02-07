@@ -1,0 +1,21 @@
+@media (min-width: 769px) {
+    body {
+        display: flex;
+
+    }
+
+    .app {
+        width: 100%;
+    }
+
+    .menu {
+        display: flex;
+        height: 100%;
+
+    }
+
+    .desktop {
+        display: flex;
+        flex-direction: column;
+    }
+}
