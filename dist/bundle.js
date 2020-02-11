@@ -90,14 +90,17 @@
 /*!*****************!*\
   !*** ./main.js ***!
   \*****************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/index.scss */ "./styles/index.scss");
-/* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_index_scss__WEBPACK_IMPORTED_MODULE_0__);
-
+const hamburger = document.querySelector('.hamburger')
+const menu = document.querySelector('.menu')
+const desktop = document.querySelector('.desktop')
+const add = () => {
+    menu.classList.toggle("aside")
+    desktop.classList.toggle("opacity")
+}
+hamburger.addEventListener('click', add);
 
 /***/ }),
 

@@ -10,7 +10,7 @@
     color: $font-btn;
     font-weight: 500;
     text-align: center;
-    line-height: 1.5;
+    cursor: pointer;
     border-radius: 5px;
     padding: 12px 21px 12px 23px;
 
@@ -21,27 +21,116 @@
     width: 148px;
     background-color: $color-primary;
     color: $font-btn;
+    margin-right: 24px;
+}
+
+
+
+.btn-menu {
+    text-align: left;
+    padding: 8px 32px;
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    font-size: 16px;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+.btn-menu:hover {
+    border-right: 2px $font-btn solid;
+    background-color: $color-primary;
+}
+
+.btn-menu-active {
+    color: $font-btn;
+    border-right: 2px $font-btn solid;
+    background-color: $color-primary;
 }
 
 .btn-light {
     border: solid 2px $color-primary;
     border-radius: 5px;
     width: 148px;
+    background-color: #ebedee;
 
+}
+
+.btn-light:hover {
+    background-color: $color-primary;
 }
 
 .btn-card {
     width: 100%;
 }
 
+
+
 .tabele-btn {
-    color: $font-dark;
+
     height: 100%;
     border-radius: 5px 0 0 0;
     border: none;
-    border-bottom: solid 2px $font-btn;
+    color: #7a8388;
     background-color: #fff;
     font-weight: normal;
+    border-bottom: solid 2px white;
 
 
+}
+
+.tabele-btn:hover {
+    border-bottom: solid 2px $font-btn;
+    color: $font-dark;
+}
+
+
+.table-btn-active {
+    border-bottom: solid 2px $font-btn;
+    color: $font-dark;
+}
+
+
+
+.hamburger {
+    border: none;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    margin-left: 12px;
+    cursor: pointer;
+
+    div {
+        width: 16px;
+        height: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        div {
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+    }
+}
+
+.widget-btn {
+    font-family: $font;
+    font-size: 16px;
+    height: 48px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: normal;
+    width: 123px;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }

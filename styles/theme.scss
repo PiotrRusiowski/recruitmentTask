@@ -14,7 +14,15 @@
 p {
     margin: 0;
     padding: 0;
+    display: inline-block;
 
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
 }
 
 ul {
@@ -34,49 +42,112 @@ body {
 nav {
     background-color: #191d1f;
     color: rgb(143, 143, 143);
+    font-size: 14px;
 
     .card-header {
         border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .img-logo {
+            margin-right: 23px;
+        }
+
+        .logo-content {
+            background-color: rgba(255, 255, 255, 0.1);
+            height: 100%;
+            padding: 9px 16px;
+            border-radius: 4px;
+            height: 40px;
+
+            p {
+                color: #2b8ff4;
+            }
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+
+        }
 
     }
 
+
 }
+
+
 
 select {
     width: 100%;
     height: 48px;
-    -webkit-appearance: none;
-    border: 1px solid #ebedee;
-    border-radius: 5px;
-    line-height: 2;
-    background-color: #fff;
+    border-radius: 4px;
+    margin-top: 16px;
     margin-bottom: 14px;
-    margin-top: 16px
 }
+
 
 .container {
     margin: 24px;
 
 }
 
-////
-.menu {
-    display: none;
-    width: 200px;
-    height: 100%;
-    background-color: red;
 
+.menagmentDasboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+        margin-left: 24px
+    }
+
+    .circles {
+        border-left: 2px solid #ebedee;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px;
+
+        div {
+            width: 24px;
+            display: flex;
+            justify-content: space-between;
+
+            .circle {
+                width: 4px;
+                height: 4px;
+                margin-right: 0px;
+
+            }
+        }
+    }
 }
 
+.dashboard {
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+    justify-content: space-between;
 
-
-/////
+}
 
 .circle {
     border-radius: 50%;
     width: 52px;
     height: 52px;
     margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .rectangle {
@@ -107,4 +178,8 @@ select {
     line-height: 24px;
     letter-spacing: 0.5px;
     color: $font-mute;
+}
+
+.opacity {
+    opacity: 0.2;
 }

@@ -8,7 +8,14 @@
 
 p {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: inline-block; }
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
 
 ul {
   list-style: none;
@@ -24,35 +31,77 @@ body {
 
 nav {
   background-color: #191d1f;
-  color: #8f8f8f; }
+  color: #8f8f8f;
+  font-size: 14px; }
   nav .card-header {
-    border: none; }
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    nav .card-header .logo {
+      display: flex;
+      align-items: center; }
+    nav .card-header .img-logo {
+      margin-right: 23px; }
+    nav .card-header .logo-content {
+      background-color: rgba(255, 255, 255, 0.1);
+      height: 100%;
+      padding: 9px 16px;
+      border-radius: 4px;
+      height: 40px; }
+      nav .card-header .logo-content p {
+        color: #2b8ff4; }
+    nav .card-header div {
+      display: flex;
+      align-items: center;
+      border-radius: 4px; }
 
 select {
   width: 100%;
   height: 48px;
-  -webkit-appearance: none;
-  border: 1px solid #ebedee;
-  border-radius: 5px;
-  line-height: 2;
-  background-color: #fff;
-  margin-bottom: 14px;
-  margin-top: 16px; }
+  border-radius: 4px;
+  margin-top: 16px;
+  margin-bottom: 14px; }
 
 .container {
   margin: 24px; }
 
-.menu {
-  display: none;
-  width: 200px;
-  height: 100%;
-  background-color: red; }
+.menagmentDasboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .menagmentDasboard p {
+    margin-left: 24px; }
+  .menagmentDasboard .circles {
+    border-left: 2px solid #ebedee;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px; }
+    .menagmentDasboard .circles div {
+      width: 24px;
+      display: flex;
+      justify-content: space-between; }
+      .menagmentDasboard .circles div .circle {
+        width: 4px;
+        height: 4px;
+        margin-right: 0px; }
+
+.dashboard {
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+  justify-content: space-between; }
 
 .circle {
   border-radius: 50%;
   width: 52px;
   height: 52px;
-  margin-right: 24px; }
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .rectangle {
   width: 51px;
@@ -74,7 +123,13 @@ select {
   letter-spacing: 0.5px;
   color: #99a9b1; }
 
+.opacity {
+  opacity: 0.2; }
+
 .row {
+  display: flex; }
+
+.row1 {
   display: flex; }
 
 .btn {
@@ -86,7 +141,7 @@ select {
   color: #2b8ff4;
   font-weight: 500;
   text-align: center;
-  line-height: 1.5;
+  cursor: pointer;
   border-radius: 5px;
   padding: 12px 21px 12px 23px; }
 
@@ -94,24 +149,91 @@ select {
   border: rgba(43, 143, 244, 0.2);
   width: 148px;
   background-color: rgba(43, 143, 244, 0.2);
-  color: #2b8ff4; }
+  color: #2b8ff4;
+  margin-right: 24px; }
+
+.btn-menu {
+  text-align: left;
+  padding: 8px 32px;
+  width: 100%;
+  background-color: #fff;
+  color: black;
+  font-size: 16px;
+  height: 40px;
+  cursor: pointer; }
+
+.btn-menu:hover {
+  border-right: 2px #2b8ff4 solid;
+  background-color: rgba(43, 143, 244, 0.2); }
+
+.btn-menu-active {
+  color: #2b8ff4;
+  border-right: 2px #2b8ff4 solid;
+  background-color: rgba(43, 143, 244, 0.2); }
 
 .btn-light {
   border: solid 2px rgba(43, 143, 244, 0.2);
   border-radius: 5px;
-  width: 148px; }
+  width: 148px;
+  background-color: #ebedee; }
+
+.btn-light:hover {
+  background-color: rgba(43, 143, 244, 0.2); }
 
 .btn-card {
   width: 100%; }
 
 .tabele-btn {
-  color: #1a1a1a;
   height: 100%;
   border-radius: 5px 0 0 0;
   border: none;
-  border-bottom: solid 2px #2b8ff4;
+  color: #7a8388;
   background-color: #fff;
-  font-weight: normal; }
+  font-weight: normal;
+  border-bottom: solid 2px white; }
+
+.tabele-btn:hover {
+  border-bottom: solid 2px #2b8ff4;
+  color: #1a1a1a; }
+
+.table-btn-active {
+  border-bottom: solid 2px #2b8ff4;
+  color: #1a1a1a; }
+
+.hamburger {
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  margin-left: 12px;
+  cursor: pointer; }
+  .hamburger div {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .hamburger div div {
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      border-radius: 4px; }
+
+.widget-btn {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  height: 48px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  font-weight: normal;
+  width: 123px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer; }
 
 .card {
   border-radius: 5px;
@@ -178,9 +300,25 @@ select {
 .card-widget {
   background-image: linear-gradient(253deg, #a065e0, #2b8ff4);
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  color: #ffffff; }
+  .card-widget h1 {
+    font-size: 24px;
+    font-weight: normal;
+    padding: 8px 0 16px 0;
+    margin: 0; }
+  .card-widget p {
+    font-size: 14px; }
   .card-widget div {
-    margin-left: auto; }
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 24px; }
+    .card-widget div h4 {
+      font-size: 16;
+      color: white;
+      font-weight: normal;
+      margin-right: 24px; }
 
 .card-newWidget {
   width: 100%;
@@ -265,17 +403,70 @@ select {
 .red-light {
   background-color: rgba(239, 63, 63, 0.2); }
 
+.menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -360px;
+  width: 360px;
+  height: 100%;
+  background-color: #fff;
+  transition: .5s linear; }
+
+.aside {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 12;
+  transition: .5s linear; }
+
+.menu-header {
+  padding: 32px;
+  border-bottom: 1px solid #ebedee; }
+  .menu-header .menu-logo {
+    display: flex;
+    align-items: center;
+    margin-top: 8px; }
+    .menu-header .menu-logo .logo {
+      border-right: 1px solid #ebedee;
+      padding-right: 24px; }
+    .menu-header .menu-logo p {
+      margin-left: 24px; }
+  .menu-header .btn-primary {
+    margin-top: 40px;
+    width: 100%;
+    background-color: #2b8ff4;
+    color: white;
+    cursor: pointer; }
+
+.menu-body {
+  padding-top: 32px;
+  padding-bottom: 134px;
+  background-color: #fff; }
+
+.menu-footer {
+  border-top: 1px solid #ebedee;
+  padding: 32px 28px 32px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff; }
+  .menu-footer .headProduct {
+    display: flex; }
+    .menu-footer .headProduct img {
+      width: 40px;
+      height: 40px;
+      margin-right: 24px; }
+
 @media (min-width: 769px) {
   body {
-    display: flex; }
+    display: flex;
+    width: 1920px; }
   .app {
     width: 100%; }
-  .menu {
-    display: flex;
-    height: 100%; }
-  .desktop {
-    display: flex;
-    flex-direction: column; } }
+  .opacity {
+    opacity: 0.2; } }
 
 
 /*# sourceMappingURL=global.css.map*/
