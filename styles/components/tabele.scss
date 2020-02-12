@@ -4,10 +4,23 @@
     display: table;
     text-align: center;
     width: 100%;
-
     border: solid 1px #ebedee;
     border-radius: 4px;
+    transition: 0.5s linear;
 
+
+
+}
+
+.overflow {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+.none {
+    display: none;
+    transition: 0.5s linear
 }
 
 .theader {
